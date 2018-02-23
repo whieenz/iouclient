@@ -40,6 +40,7 @@ Page({
     var s = that.data.scoreinfo;
     s.ratio++;
     s.score = s.score + s.ratio;
+    s.tag = that.getTag(s.score);
     that.setData({
       scoreinfo: s
     })
@@ -50,6 +51,7 @@ Page({
     s.ratio--;
     var base = -2;
     s.score = s.score + base * (10 - s.ratio);
+    s.tag = that.getTag(s.score);
     that.setData({
       scoreinfo: s
     })
@@ -58,13 +60,23 @@ Page({
     var that = this;
     var s = {
       "score": 80,
-      "ratio": 5
+      "ratio": 5,
+      "tag":'B'
     };
-    s.ratio++;
-    s.score = s.score + s.ratio;
     that.setData({
       scoreinfo: s
     })
+  },
+  getTag: function(score){
+    if(score>=90){
+      return 'A';
+    } else if (score >= 80&&score<90){
+      return 'B';
+    } else if (score >= 60 && score < 80) {
+      return 'C';
+    } else if (score < 60){
+      return 'D';
+    } 
   },
   onLoad: function () {
     if (app.globalData.userInfo) {

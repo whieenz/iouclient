@@ -1,8 +1,5 @@
 <view class="container">
   <view class="userinfo">
-    <view>
-      <text class="userinfo-nickname">{{scoreinfo.score}}</text>
-    </view>
     <view class='userinfo-detial'> 
       <text class="userinfo-nickname">{{scoreinfo.score}}</text>
       <text class='detial-text-one'>{{scoreinfo.tag}}</text>
