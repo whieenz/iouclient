@@ -1,0 +1,80 @@
+/**index.wxss**/
+Page{
+  height: 100%;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 0 0;
+  box-sizing: border-box;
+  background-color: ghostwhite
+} 
+.userinfo {
+  width: 100%;
+  padding: 30rpx 50rpx 30rpx 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #118eea
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #ffffff;
+  font-size: 45pt;
+}
+.userinfo-detial{
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.test-view {
+  width: 100%;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.detial-item{
+  width: 30%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:space-between;
+
+}
+.detial-text-one{
+  color: #ffffff;
+  font-size: 20pt;
+}
+.detial-text-two{
+  color: #ffffff;
+  font-size: 9pt;
+}
+.usermotto {
+  margin-top: 200px;
+}
+
+.newpage{
+  margin-top: 10px;
+}
+.newpage_text{
+ color: #aaa
+}
+.mybutton{
+  color: #fff;
+  background-color: #118eea
+}

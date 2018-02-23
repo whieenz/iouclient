@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="userinfo">
+    <view>
+      <text class="userinfo-nickname">{{scoreinfo.score}}</text>
+    </view>
+    <view class='userinfo-detial'> 
+      <text class="userinfo-nickname">{{scoreinfo.score}}</text>
+      <text class='detial-text-one'>{{scoreinfo.tag}}</text>
+    </view>
+  </view>
+  <view class='test-view'> 
+    <button class= 'mybutton' bindtap='add' >守信一次</button>
+    <button class= 'mybutton' bindtap='reduce'>失信一次</button>
+    <button class= 'mybutton' bindtap='reset'>重置</button>
+  </view>
+</view>

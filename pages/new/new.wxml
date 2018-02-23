@@ -1,0 +1,23 @@
+<view class='scontainer'>
+  <view class='boxs' > 
+    <view class='create-iou-layout'>
+      <view class='iou-layout-item'>
+        <text class='key-text'>金额</text>
+        <input class='value-text'></input>
+      </view>
+      <view class='iou-layout-item'>
+        <text class='key-text'>还款日期</text>
+        <input class='value-text'></input>
+      </view>
+      <view class='iou-layout-item'>
+        <text class='key-text'>利息</text>
+        <input class='value-text'></input>
+      </view>
+      <view class='iou-layout-item'>
+        <text class='key-text'>理由</text>
+        <input class='value-text'></input>
+      </view>
+    </view>
+    <button class= 'submit-button' bindtap='test' >提交</button>
+  </view> 
+</view>

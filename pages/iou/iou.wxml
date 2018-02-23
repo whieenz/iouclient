@@ -1,0 +1,42 @@
+<view class='scontainer'>
+<scroll-view class='me-container' scroll-y>
+  <!-- <view class='iou-list-item'>
+    <image class='user-icon' src='../image/yasuo.jpg'>
+    
+    </image>
+    <view class='item-left'>
+      <view class='item-mini'>
+        <text class='user-name'>何子文</text>
+        <text class='money-text'> 8888.88</text>
+      </view>
+      <view class='item-mini'>
+        <text class='time'>2018年2月9日 11：11</text>
+      </view>
+    </view>
+  </view> -->
+  <view class='iou-list-item0' wx:for="{{iou}}" wx:for-item="iou">
+    <text class='type-text'>{{iou.jtzt}}</text>
+    <text class='create-time'>{{iou.createTime}} </text>
+    <view class='money-view-max'>
+      <view class='money-view'>
+        <text class='money-text0'>{{iou.zje}}</text>
+        <text class='money-unit'>{{iou.unit}}</text>
+      </view>
+    </view>
+    <view class='row-view' wx:for="{{iou.commonInfo}}" wx:for-item="iouMx">
+      <text class='key-text'>{{iouMx.key}}</text>
+      <text class='text-split'>：</text>
+      <text class='value-text'>{{iouMx.value}}</text>
+    </view>
+    <view class='more-view'>
+      <text class='more'>查看详情</text>
+    </view>
+  </view>
+</scroll-view>
+  <!-- <view class='foot'  >
+    <navigator class="page-foot" openType="navigate" wx:for="{{bootMenu}}" wx:for-item="item" url="{{item.url}}">
+      <image style="display:block;width: 60rpx; height: 60rpx;" src="{{item.src}}" mode ='scaleToFill'></image>
+      <text class='boot_text' >{{item.text}}</text>
+    </navigator> 
+  </view> -->
+ </view>

@@ -1,0 +1,60 @@
+page{
+  height: 100%;
+}
+.scontainer{
+  height: 100%;
+  display: flex;
+  flex-flow: column ;
+  background: gray;
+  align-items: center;
+  justify-content:space-between;
+}
+.boxs{
+  background: ghostwhite;
+  height: 100%;
+  width: 100%;
+}
+.foot{
+  height: 12%;
+  width: 100%;
+  background:white;
+  display: flex;
+  justify-content: space-between;
+}
+.icon_foot{
+  height: 60rpx;
+  width: 60rpx;
+}
+.page-foot{
+  display:flex;
+  flex-flow:column;
+  justify-content:center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+.create-iou-layout{
+  width: auto;
+  margin: 10rpx 25rpx 0rpx 25rpx;
+  padding: 50rpx 10rpx 50rpx 10rpx;
+  display:flex;
+  flex-flow:column;
+  background-color: white;
+}
+.iou-layout-item{
+  display:flex;
+  flex-flow:row;
+  width: auto;
+  height: 100rpx;
+  align-items: center;
+  padding: 0rpx 20rpx 0rpx 20rpx;
+  border-bottom: 0.5rpx solid ghostwhite;
+}
+.value-text{
+  margin-left: 10rpx;
+}
+.submit-button{
+  margin: 50rpx 25rpx 0rpx 25rpx;
+  color: #fff;
+  background-color: #118eea
+}

@@ -1,0 +1,28 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>
+
+<view class='iou-list-item0'>
+    <text class='type-text'>待收款</text>
+    <text class='create-time'>2018年2月9日 </text>
+    <view class='money-view-max'>
+      <view class='money-view'>
+        <text class='money-text0'>689.56</text>
+        <text class='money-unit'>元</text>
+      </view>
+    </view>
+    <view class='row-view'>
+      <text class='key-text'>还款人：</text>
+      <text class='value-text'>张三</text>
+    </view>
+    <view class='row-view'>
+      <text class='key-text'>还款时间：</text>
+      <text class='value-text'>2018年3月2日</text>
+    </view>
+    <view class='more-view'>
+      <text class='more'>查看详情</text>
+    </view>
+  </view>
