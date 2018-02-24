@@ -8,18 +8,18 @@ Page{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0 0 0 0;
   box-sizing: border-box;
   background-color: ghostwhite
 } 
 .userinfo {
   width: 100%;
-  padding: 30rpx 50rpx 30rpx 50rpx;
+  padding: 0rpx 50rpx 30rpx 50rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #118eea
+  background-color: #F2F2F2
 }
 .userinfo-avatar {
   width: 128rpx;
@@ -29,7 +29,8 @@ Page{
 }
 
 .userinfo-nickname {
-  color: #ffffff;
+  color: #118eea;
+  font-size: 18pt
 }
 .userinfo-detial{
   height: 200rpx;
@@ -37,7 +38,7 @@ Page{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   box-sizing: border-box;
 }
 .detial-item{
@@ -64,5 +65,30 @@ Page{
   margin-top: 10px;
 }
 .newpage_text{
- color: #aaa
+  color: #aaa
+}
+.page-canvas{
+  /* width: 100%; */
+	display: flex;
+  padding: 0;
+	display: -webkit-flex;
+  flex-flow: column;
+	justify-content:center;
+	align-items: center;
+}
+.canvas{
+  width: 100%;
+  height: 100%;
+}
+
+.test-view {
+  width: 100%;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.mybutton{
+  color: #fff;
+  background-color: #118eea
 }

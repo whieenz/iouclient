@@ -48,6 +48,10 @@ Page{
   flex-direction: row;
   justify-content: flex-start;
 }
+.mybutton{
+  color: #fff;
+  background-color: #118eea
+}
 .detial-item{
   width: 30%;
   display: flex;
@@ -73,8 +77,4 @@ Page{
 }
 .newpage_text{
  color: #aaa
-}
-.mybutton{
-  color: #fff;
-  background-color: #118eea
 }

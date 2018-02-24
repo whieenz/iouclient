@@ -1,17 +1,27 @@
 <view class="container">
+
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-
+    </block> -->
+     <view class="page-canvas" style="height:{{canvas.height}}px;width:{{canvas.width}}px"> 
+			<canvas canvas-id="credit" class='canvas'></canvas>
+		 </view> 
     <view class='userinfo-detial'> 
-      <view class='detial-item'  wx:for="{{detial}}" wx:for-item="item"> 
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <!-- <view class='detial-item'  wx:for="{{detial}}" wx:for-item="item"> 
         <text class='detial-text-one'>{{item.value}}</text>
         <text class='detial-text-two'>{{item.key}}</text>
-      </view>
+      </view> -->
     </view>
 
+  </view>
+  <view class='test-view'> 
+    <button class= 'mybutton' bindtap='add' >守信一次</button>
+    <button class= 'mybutton' bindtap='reduce'>失信一次</button>
+    <button class= 'mybutton' bindtap='reset'>重置</button>
   </view>
 </view>
